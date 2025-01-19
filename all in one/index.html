@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All in one</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="colors">
+        <h1>By color changer</h1>
+        <h2 class="color">
+          <span class="button" id="gray"></span>
+          <span class="button" id="pink"></span>
+          <span class="button" id="blue"></span>
+          <span class="button" id="orange"></span>
+        </h2>
+      </div>
+      <div class="bmi">
+        <h1>BMI CALCULATOR</h1>
+        <br />
+        <form>
+          <div class="heights">
+            <label for="height">Height in cm</label>
+            <input type="text" placeholder="Enter your height" id="height" />
+          </div>
+          <br />
+          <div class="weights">
+            <label for="weight">Weight in cm</label>
+            <input type="text" placeholder="Enter your weight" id="weight" />
+          </div>
+          <br />
+          Your current bmi is
+          <div id="result"></div>
+          <br />
+          <button>Calculate</button>
+          <br />
+          <br />
+          <h5>Weight Suggest</h5>
+          <div class="info">
+            <p>Under Weight = Less Than 18.6</p>
+            <p>Normal Weight = 18.6 to 24.9</p>
+            <p>Under Weight = More Than 24.9</p>
+          </div>
+        </form>
+      </div>
+      <div class="digital">
+        <div id="banner"><h1>Your local time</h1></div>
+        <div id="clock"></div>
+      </div>
+      <div class="randomclr">
+        <h1>Random Color</h1>
+        <div class="clr">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+        </div>
+      </div>
+      <!-- <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="text" id="inputbox" placeholder="0" />
+        <div class="div">
+          <button id="operator">AC</button>
+          <button id="operator">DEL</button>
+          <button id="operator">%</button>
+          <button id="operator">/</button>
+        </div>
+        <div class="div">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button id="operator">*</button>
+        </div>
+        <div class="div">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button id="operator">-</button>
+        </div>
+        <div class="div">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button id="operator">+</button>
+        </div>
+        <div class="div">
+          <button>00</button>
+          <button>0</button>
+          <button>.</button>
+          <button id="equal">=</button>
+        </div>
+      </div> -->
+      <div class="password">
+        <h1>Password Generater</h1>
+        <div id="inputbox">
+          <input type="text" id="passbox" disabled />
+        </div>
+        <input type="range" min="8" max="30" id="inputSlider"/>
+        <div id="row">
+          <h4>Password Length</h4>
+          <span id="sliderValue"></span>
+        </div>
+        <div id="row">
+          <label for="lower">Include Lower value</label>
+          <input type="checkbox" name="lower" id="lower" />
+        </div>
+        <div id="row">
+          <label for="upper">Include upper value</label>
+          <input type="checkbox" name="upper" id="upper" />
+        </div>
+        <div id="row">
+          <label for="number">Include number value</label>
+          <input type="checkbox" name="number" id="number" />
+        </div>
+        <div id="row">
+          <label for="symbol">Include symbol value</label>
+          <input type="checkbox" name="symbol" id="symbol" />
+        </div>
+        <button id="generatebutton">Generate Password</button>
+      </div>
+      <div class="container">
+        <div class="analogclock">
+          <div style="--color: #ff3d58; --h: 70px" class="hand" id="hour">
+            <i></i>
+          </div>
+          <div style="--color: #00a6ff; --h: 75px" class="hand" id="min">
+            <i></i>
+          </div>
+          <div style="--color: #ffffff; --h: 80px" class="hand" id="sec">
+            <i></i>
+          </div>
+          <span style="--i: 1"><b>1</b></span>
+          <span style="--i: 2"><b>2</b></span>
+          <span style="--i: 3"><b>3</b></span>
+          <span style="--i: 4"><b>4</b></span>
+          <span style="--i: 5"><b>5</b></span>
+          <span style="--i: 6"><b>6</b></span>
+          <span style="--i: 7"><b>7</b></span>
+          <span style="--i: 8"><b>8</b></span>
+          <span style="--i: 9"><b>9</b></span>
+          <span style="--i: 10"><b>10</b></span>
+          <span style="--i: 11"><b>11</b></span>
+          <span style="--i: 12"><b>12</b></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

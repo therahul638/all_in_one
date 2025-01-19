@@ -1,0 +1,308 @@
+/* Bg color changer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    margin: 0px 35px;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+}
+.all{
+    display: flex;
+    gap: 70px;
+}
+.colors{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+    background: linear-gradient(135deg , rgb(11, 128, 223), white);
+    color: #000;
+
+}
+.colors h1{
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.color{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+    padding: 15px;  
+}
+#gray{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(135deg, orange, rgb(107, 0, 128));
+}
+#pink{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    background: linear-gradient(135deg, blue, pink);
+}
+#blue{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    background: linear-gradient(135deg, purple, white);
+}
+#orange{
+    height: 30px;
+    border-radius: 5px;
+    width: 30px;
+    cursor: pointer;
+    border: 1px solid white;
+    background: linear-gradient(135deg, rgb(255, 72, 0), rgb(0, 92, 128));
+}
+/* Bmi Calculator */
+.bmi{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+    font-size: 12px;
+    background: linear-gradient(135deg , rgb(11, 32, 223), white);
+    color: #000;
+    overflow: hidden;
+}
+.bmi h1{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.heights input, .weights input{
+    border: none;
+    border-radius: 5px solid whight;
+    padding: 2px;
+    margin-left: 3px;
+    outline: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .9) ;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.bmi button{
+    cursor: pointer;
+    padding: 2.5px 5px;
+}
+
+
+/* digital watch */
+.digital{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+    font-size: 12px;
+    background: linear-gradient(135deg , rgb(181, 11, 223), white);
+    color: #000;
+    overflow: hidden;
+}
+.digital h1{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+#clock{
+    margin-top: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* Random Color */
+.randomclr{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+    font-size: 12px;
+    background: linear-gradient(135deg , rgb(78, 11, 223), white);
+    color: #000;
+    overflow: hidden;
+}
+.randomclr h1{
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.clr{
+    margin-top: 90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.clr button{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Calculator */
+.calculator{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    /* text-align: center; */
+    padding: 0px 10px;
+    border-radius: 10px;
+    height: 280px;
+    background: linear-gradient(135deg , rgb(86, 86, 86), rgb(46, 45, 45));
+    color: #000;
+
+}
+.calculator h1{
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.calculator input{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.calculator input::placeholder{
+    font-size: 14px;
+    color: white;
+}
+.div button{
+    background: transparent;
+    width: 35px;
+    font-size: 14px;
+    border: none;
+    height: 35px;
+    border-radius: 50%;
+    margin: 3.3px;
+    cursor: pointer;
+    color: #fff;
+}
+.div #equal{
+    background: orangered;
+}
+.div #operator{
+    color: green;
+}
+
+/* Analog Clock */
+.container{
+    position: relative;
+}
+.analogclock{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 280px;
+    border-radius: 50%;
+    height: 280px;
+    background: linear-gradient(135deg , rgb(15, 33, 47), rgb(78, 24, 24));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.analogclock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.analogclock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 18px;
+}
+.analogclock::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    width: 4px;
+    height: var(--h);
+    background: var(--color);
+}
+
+/* Password generater */
+.password{
+    box-shadow: 4px 3px 11px rgba(118, 118, 118, 0.7);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+    padding: 10px;
+    background: linear-gradient(135deg , rgb(11, 128, 223), white);
+    color: #000;
+
+}
+.password h1{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#passbox{
+    margin-top: 10px;
+    height: 40px;
+    width: 100% ;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    padding: 3px;
+    outline: none;
+}
+#inputSlider{
+    margin-top: 5px;
+    width: 100%;
+}
+#row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+}
+#row , label{
+    margin-top: 3px;
+}
+#row input[type="checkbox"]{
+    height: 10px;
+    width: 10px;
+}
+#generatebutton{
+    margin-top: 14px;
+    padding: 7px 30px;
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
